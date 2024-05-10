@@ -58,21 +58,6 @@ This page displays existing blog posts and allows users to:
 
 These images shows index.html and blog.html in their light and dark states
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="./assets/img/MyBlogLight.png" alt="MyBlogLight" width="400" height="400">
-    </td>
-    <td align="center">
-      <img src="./assets/img/MyBlogDark.png" alt="MyBlogDark" width="400" height="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="./assets/img/BlogPostsLight.png" alt="BlogPostsLight" width="400" height="400">
-    </td>
-    <td align="center">
-      <img src="./assets/img/BlogPostsDark.png" alt="BlogPostsDark" width="400" height="400">
-    </td>
-  </tr>
-</table>
+![MyBlogLight](./assets/img/MyBlogLight.png) | ![MyBlogDark](./assets/img/MyBlogDark.png)
+:---: | :---:
+![BlogPostsLight](./assets/img/BlogPostsLight.png) | ![BlogPostsDark](./assets/img/BlogPostsDark.png)
