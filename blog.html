@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <script src="/assets/js/blog.js" defer></script>
+    <script src="/assets/js/logic.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <!-- Container for the header content -->
+        <div class="header">
+            <div class="nav">
+                <a href="index.html" class="button">Home</a>
+                <a href="blog.html" class="button">Blog</a>
+                <a href="blog.html" class="button" id="clear-blog-posts">Clear Blog</a>
+                <!-- <button id="clear-blog-posts" class="button" >Clear Blog</button> -->
+            </div>
+            <h1>My Blog Posts</h1>
+            <div class="switch-container">
+                <span>Toggle Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <!-- Container for the blog posts -->
+    <div class="blog-list">
+        <!-- Blog posts will be dynamically inserted here -->
+    </div>
+    <footer>
+        <a href="https:github.com/rp192w/" target="_blank">Robert's Portfolio</a>
+    </footer>
+</body>
+</html>

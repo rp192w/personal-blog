@@ -1,0 +1,27 @@
+/* Blog-specific styles */
+.blog-title {
+    text-align: center;
+}
+
+.blog-list {
+    padding: 20px;
+}
+
+.blog-entry {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#clear-blog-posts {
+    font-size: 1em;
+}
+
+#clear-blog-posts:hover {
+    background-color: darkgray;
+}

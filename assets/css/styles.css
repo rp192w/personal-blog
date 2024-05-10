@@ -1,0 +1,139 @@
+/* Define global variables for consistent styling */
+:root {
+    --font-family: Arial, sans-serif;
+    --text-color: black;
+    --background-color: white;
+    --header-justify-content: space-between;
+    --header-align-items: center;
+    --nav-link-padding: 10px 20px;
+    --nav-link-margin: 5px;
+    --nav-link-bg-color: black;
+    --nav-link-hover-bg-color: darkgray;
+    --footer-padding: 10px;
+    --footer-border-top-color: gray;
+    --switch-width: 60px;
+    --switch-height: 34px;
+    --slider-bg-color: #ccc;
+    --slider-hover-bg-color: #aaa;
+    --slider-checked-bg-color: darkgray;
+    --slider-transition: 0.4s;
+    --slider-knob-size: 26px;
+    --button-color: black;
+}
+
+/* Default body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: var(--header-justify-content);
+    align-items: var(--header-align-items);
+}
+
+/* Common header styles */
+h1 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav a, 
+.button {
+    display: inline-block;
+    padding: var(--nav-link-padding);
+    margin: var(--nav-link-margin);
+    background-color: var(--nav-link-bg-color);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.button {
+    color: var(--button-color);
+}
+
+.nav a:hover {
+    background-color: var(--nav-link-hover-bg-color);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: var(--footer-padding);
+    border-top: 1px solid var(--footer-border-top-color);
+}
+
+/* Switch and slider styles */
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    width: var(--switch-width);
+    height: var(--switch-height);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--slider-bg-color);
+    transition: var(--slider-transition);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--slider-knob-size);
+    width: var(--slider-knob-size);
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: var(--slider-transition);
+}
+
+.slider:hover {
+    background-color: var(--slider-hover-bg-color);
+}
+
+input:checked + .slider {
+    background-color: var(--slider-checked-bg-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
