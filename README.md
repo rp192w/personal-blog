@@ -2,7 +2,7 @@
 
 ## Link To Deployed App
 
-<https://rp192w.github.io/personal-blog>
+<https://rp192w.github.io/personal-blog/>
 
 ## Overview
 
